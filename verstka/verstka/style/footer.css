@@ -1,0 +1,135 @@
+/* start => section footer */
+.footer{
+    background-color: black;
+}
+.footer li{
+        list-style-type: none;
+}
+.main_footer{ 
+    padding: 96px 0px;
+    display: flex;
+    justify-content: center;
+}
+.search_text{
+    font-size:25px;
+    margin: 0 0 32px;
+}
+.search_bar{
+    align-items: center;
+    text-align: center;
+    color:#FFFFFF;
+    font-family: 'Jost',sans-serif;
+}
+.mail{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.input_mail{
+    padding: 17px 30px;
+    width: 381px;
+    height: 60px;
+    font-size: 17px;
+    background-color: #303030;
+    border: none;
+    color: #fff;
+    outline: none;
+    font-family: 'Jost',sans-serif;
+}
+.button_mail{
+    padding: 17px 32px;
+    width: 136px;
+    height: 60px;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #525252;
+    border-color: #525252;
+    font-family: 'Jost',sans-serif;
+    cursor: pointer;
+    text-align: center;
+}
+.button_mail:hover{
+    transition: .3s ease-in-out;
+    background-color:#4c4c4c ;
+    border-color:  #525252;
+}
+.low_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+	border-bottom:1px solid #BABABA;
+}
+.left_side{ 
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+.left_text{ 
+    font-size: 28px;
+    color: #fff;
+    font-family: 'Jost',sans-serif;
+}
+.left_text_menu{
+    font-family: 'Jost',sans-serif;
+     font-size: 28px;
+     color: black;
+     font-weight: 600;
+}
+.left_text1{
+    color: white;
+    font-family: 'Jost',sans-serif;
+    font-size: 30px;
+}
+.right_side{
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+}
+.right-point{
+    padding: 0 16px;
+}
+.right_text{
+    color:#BABABA;
+    font-family: 'Jost',sans-serif;
+    font-size: 16px;
+}
+.point_text{
+    margin: 0 0 14px;
+    color: #fff;
+    font-size: .8125rem;
+    letter-spacing: .02em;
+    font-family:'Jost',sans-serif;
+    text-transform: uppercase;
+}
+
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 5px;
+}
+.end_footer{
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+}
+.text_footer{
+    display: flex;
+    justify-content: center;
+    color: #767676;
+    font-size: 15px;
+    font-family: 'Jost',sans-serif;
+}
+.pic{
+   padding: 0 16px;
+   width: 43px;
+   height: 24px;
+}
+.left_text_h4{
+    font-family: 'Jost',sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/* end => section footer */

@@ -1,0 +1,635 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* start => header  */
+.header{ 
+    padding:20px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    background: white;
+}
+
+.header .top_part,.left_points,.right_points,.right_part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left_part,.right_part,.center_part{ 
+    width: 33.3%;
+}
+.center_part{ 
+    text-align: center;
+}
+.left_points{
+    width: 100%;
+    padding: 0 50px;
+}
+.right_selects,.right_points{
+    width: 50%;
+    cursor: pointer;
+}
+.country,.coin,.lang{
+    border:none ;
+    outline: none;
+}
+.left_point{
+    font-size: 18px;
+    font-family: sans-serif;
+    color:black;
+}
+.left_point:hover{
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    color:pink; 
+}
+.left_points .left_point a{
+    color: inherit;
+    text-decoration: none;
+}
+.text{
+    font-size:35px;
+    font-family: sans-serif;
+    color: #121212;
+}
+.right_selects,.country,.coin,.lang{
+    border:none;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.right_points{
+    padding-right: 20px;
+}
+.right_selects{
+    display: flex;
+    justify-content: space-around;
+}
+.icons{
+    text-decoration: none;
+    color: inherit;
+}
+.icons:hover{
+    transition: .3s ease-in-out;
+    color: pink;
+}
+/* end => header */
+
+/* start => section picture_section */
+
+.picture_section {
+   width: 100%;
+   height: calc(100% - 70px);
+   box-shadow: rgb(165 165 165 /100%) 0px 4px 12px;
+}
+.picture{
+    background-image: url('../img/picture_section/2.jpg');
+    width: 100%;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding: 256px;
+}
+
+.text_section{
+    font-size: 28px;
+    font-family: 'Jost', sans-serif; 
+    color:#FFFFFF;
+    text-align: center;
+}
+.parahraph{
+    font-size:110px;
+    color:#FFFFFF;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    margin: 0 0 12px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.bottom_section{
+   display: flex;
+   word-spacing: 4px;
+   align-items: center;
+   justify-content: center;
+}
+
+.bottom_section p { 
+    margin-left: 13px;
+    margin-right: 26px;
+    margin-top: 32px;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.link{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Jost',sans-serif;
+    color: inherit;
+    position: relative;
+}
+.link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:#fff; 
+    transition: width 0.3s ease-in-out; 
+}
+.link:hover::before {
+    width: 100%;
+}
+.text_bottom,.text_bottom_2{ 
+    padding-bottom: 2px;
+    font-family: 'Jost', sans-serif;
+
+}
+
+/* end => section picture section */
+/* start => section clothes */
+.clothes{ 
+    margin-top: 20px;
+}
+.clothes_conteiner{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    text-align: center;
+    gap: 50px 30px;
+    
+}
+.clothes_in_cont1,.clothes_in_cont2,.clothes_in_cont3{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    border:2px solid gray;
+}
+.text_clothes{
+    text-align: left;
+    padding-left: 10px;
+}
+.text_conteiner{
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: 'Jost', sans-serif; 
+    align-items: center;
+    display: flex;
+}
+
+.text_summer{ 
+    font-size:30px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.clothes_in_cont2 .text_clothes .text_shop .material-symbols-outlined{
+    align-items: center;
+}
+.clothes_in_cont1, .clothes_in_cont2, .clothes_in_cont3 {
+    position: relative; 
+    transition: transform 0.3s; 
+    cursor: pointer;
+}
+.clothes_in_cont1, .clothes_in_cont2, .clothes_in_cont3 {
+    background-color:#f4f4f4;
+}
+.clothes_in_cont1::after, .clothes_in_cont2::after, .clothes_in_cont3::after {
+    content: '';
+    padding: 10px;
+}
+.clothes_in_cont1:hover, .clothes_in_cont2:hover, .clothes_in_cont3:hover{
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    transform: translate(-5px, -5px); 
+}
+.clothes_in_cont1:not(:hover), .clothes_in_cont2:not(:hover), .clothes_in_cont3:not(:hover){
+    transform: none;
+}
+.text_summer a{ 
+    text-decoration: none;
+    color: inherit;
+}
+.material-symbols-outlined{
+    padding-left: 7px;
+}
+.clothes_in_cont1,.clothes_in_cont2,.clothes_in_cont3{
+    border: none;
+}
+.clothes_in_cont1{
+    background-image: url('../img/picture_section/26.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 650px;
+    height: 280px;
+}
+.clothes_in_cont2{
+    background-image: url('../img/picture_section/7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 602px;
+    height: 280px;
+}
+.clothes_in_cont3{
+    background-image: url('../img/picture_section/6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 650px;
+    height: 280px;
+}
+
+
+/* end => section picture_section */
+
+/* start => section Category */
+.category{ 
+    align-items: center;
+    text-align: center;
+    padding: 96px 0px;
+}
+.text_category{
+    margin: 0 0 16px;
+    font-size: 36px;
+    font-family: 'Jost', sans-serif;
+}
+.main_category .main_points{ 
+    text-align: center;
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+}
+.main_container{
+    margin: 0 0 64px;
+}
+.main_category{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main_points{
+    justify-content: space-around;
+}
+
+.point a{
+    text-decoration: none;
+    color:inherit;
+    justify-content: space-between;
+}
+.main_points a:hover{
+    transition: .3s ease-in-out;
+    color: #ff6f61;
+}
+
+
+.category_container{ 
+    display: flex;
+    justify-content: center;
+}
+.dress_container{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    gap: 25px;
+}
+.picture_container p{
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    margin-top: 10px;
+    font-family: 'Jost', sans-serif;
+}
+
+.picture_container img::after{
+    content: '';
+    padding: 10px;
+}
+.picture_container img{ 
+    transition: transform .4s ease-in-out;
+}
+.picture_container img:hover{
+    transition:  .4s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.picture_container img:not(:hover){
+    transform: none;
+}
+
+/* end => section Category */
+
+/* satrt => section sales */
+
+
+.main_sales{ 
+    display: flex;
+    justify-content: center;
+}
+.picture_sales{ 
+    padding: 0px 16px;
+    position: relative;
+}
+.sales_container{
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(32%,47% );
+    width: 358px;
+    height: 151.59px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.text_sales { 
+    padding-bottom: 5px;
+    font-size: 1.75rem;
+    font-family: 'Jost', sans-serif;
+    
+}
+.parahraph_sales{ 
+    font-family: 'Jost', sans-serif;
+    font-size:16px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.parahraph_sales .aye{
+    
+    transition: all .2s ease-in-out;
+    transition-property: transform;
+}
+.aye{ 
+    font-size:16px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 210px;
+    top: 50%;
+    bottom: 50%;
+}
+
+.sales_container:hover .aye{
+    transition: all .3s ease-in-out;
+    left: 220px;
+}
+
+/* end => section sales */
+
+/* start => section  arrivals */
+
+.arrivals_container{
+    padding: 120px 0px;
+    font-family: 'Jost', sans-serif;
+}
+.main_arrivals{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+.text_arrivals{
+    font-family:'Jost',sans-serif;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    padding: 0 16px;
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.parahraph_arrival{
+    font-size: 16px;
+    font-weight: 600;
+}
+.parahraph_smal{
+    color:#767676;
+}
+
+.span{ 
+    color: #ff6f61;
+}
+.picture_arrival img{ 
+    transition: transform .4s ease-in-out;
+}
+.picture_arrival img:hover{
+    transition:  .4s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.picture_arrival img:not(:hover){
+    transform: none;
+}
+.texts{
+    padding-top: 12px;
+}
+.text_picture a{ 
+    color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* end => section new arrivals */
+
+/* start => section summer days */
+
+.summer_days{ 
+    display: flex;
+    justify-content: center;
+    padding: 0 0 96px;
+}
+.main_summer{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    align-items: center;
+}
+.par_h6{
+    color:#767676;
+    font-size: .8125rem;
+    font-family: 'Jost',sans-serif;
+    margin: 0 0 12px;
+    font-weight: 500;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.picture_summer{ 
+    text-align: center;
+}
+.par_h3{ 
+    font-size:32px;
+    font-family: 'Jost',sans-serif;
+    margin: 0 0 64px;
+}
+.picture_text{
+    padding: 24px;
+}
+.text_picture{ 
+    font-size: 1.125rem;
+    font-family: 'Jost',sans-serif;
+}
+.span_picture{
+    color:#767676;
+    font-size: 16px;
+    font-family: 'Jost',sans-serif;
+}
+.span_picture_orange{
+    color: #ff6f61;
+    font-family: 'Jost',sans-serif;
+}
+
+/* end => section summer days */
+
+/* start => section our blog */
+.our_blog{ 
+    background-color: #f5f5f5;
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main_text{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 16px;
+}
+.par_h6_blog{
+    color: #909090;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Jost',sans-serif;
+    margin: 0px 0px 12px;
+}
+.par_h2_blog{
+    margin: 0 0 64px;
+    font-family: 'Jost',sans-serif;
+    font-size: 2.25rem;
+}
+.main_blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog_picture{ 
+    padding: 0 16px;
+}
+
+.blog_text{ 
+    padding: 32px 40px;
+    background-color: white;
+}
+.text_up_blog{ 
+    padding-bottom: 5px;
+    color: #767676;
+    font-family: 'Jost',sans-serif;
+}
+.text_bottom_blog{
+    font-size:20px;
+    font-family: 'Jost',sans-serif;
+    color:#1f1f1f;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.blog_picture{ 
+    transition: transform .4s ease-in-out;
+    
+}
+.blog_picture:hover{ 
+    transition:  .4s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}
+.blog_picture:not(:hover){
+    transform: none;
+}
+.blog_discover{ 
+    display: flex;
+    justify-content: center;
+    margin:50px 0px 0px; 
+}
+.blog_discover a{ 
+    text-decoration: none;
+    color:#1f1f1f;
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'Jost',sans-serif;
+    display: inline-block;
+    font-weight: 500;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    position: relative;
+}
+.picture_blog{ 
+    width: 347.98px; 
+    height: 239.23px;
+}
+.blog_discover a{ 
+    transition: transform .4s ease-in-out;
+}
+.blog_discover a:hover{ 
+    transition: .4s ease-in-out;
+    color:#727272cc;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.blog_discover a:not(:hover){ 
+   transform: none;
+}
+/* end => section out blog */
+
+/* start => section info */
+.info_container{
+    padding: 48px 0px;
+}
+.main_info{
+    font-family: 'Jost',sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: auto;
+}
+.info_h6{ 
+    font-size: .8125rem;
+    text-align: left;
+}
+.parahraph_info { 
+    color: #767676;
+}
+.info{
+   text-align: center;
+   display: flex;
+}
+.text_info{
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+}
+.color_car{ 
+    color:#ff6f61;
+    padding: 0 20px;
+}
+/* end => section info */
+

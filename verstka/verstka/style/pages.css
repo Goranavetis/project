@@ -1,0 +1,428 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* Global */
+a{
+	text-decoration: none;
+	color: inherit;
+}
+li{
+	list-style-type: none;
+}
+/**/
+/*start => section header*/
+.header{
+	padding: 24px 0px;
+	width: 100%;
+	border-bottom: 1px solid #e5e5e5;
+}
+.center_part a{ 
+	text-decoration: none;
+	color: inherit;
+	padding: 8px 16px;
+	font-family: 'Jost',sans-serif;
+	font-size: 16px;
+}
+.center_part a:hover{
+	transition: .4s ease-in-out;
+	color:#ff6f61;
+}
+.main_header{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.left_text2{ 
+	font-size: 28px;
+	font-weight: 600;
+	font-family: 'Jost',sans-serif;
+	margin: 0 16px;
+}
+.center_part{
+	display: flex;
+    justify-content: center;
+    width: 760px;
+    font-weight: 500;
+}
+.icons{ 
+	text-decoration: none;
+	color: inherit;
+	padding: 8px 16px;
+}
+.span:hover{
+	transition: .3s ease-in-out;
+	color: #ff6f61;
+}
+/* end => section header */
+
+
+/* start => mini_menu */
+.mini_menu{
+	
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    width: 48%;
+}
+.mini_header{
+	display: flex;
+	align-items: center;
+}
+.mini_header a{
+	font-size:14px;
+	font-family: 'Jost',sans-serif;
+	color: #909090;
+}
+.navigate{
+	font-size: 15px;
+	color: #909090;
+	padding: 0px 8px;
+}
+/*end => mini_menu*/
+/* start => first_pic */
+.first_picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picture{
+    background-image: url('/verstka/verstka/about_us/first_pic.jpg');
+    width:1140px;
+    height: 425px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+.text_picture,.span_1{
+    font-size: 2.75rem;
+	font-weight: 500;
+    line-height: 1.2; 
+    font-family: 'Jost',sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+/*  end => section first_pic */
+
+/* start => section story */
+
+.story{
+	font-family: 'Jost',sans-serif;
+	padding: 96px 0px 275px;
+}
+.right_text1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main_story{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.left_picture{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.left{
+	width: 269px;
+	height: 299px;
+	position:  relative;
+}
+.picture_hands{
+	position: absolute;
+	padding-bottom: 20px;
+	width: 403.5px;
+	height: 431px;
+}
+.text{
+	color: #909090;
+	font-size: 15px;
+	padding: 0 0 12px;
+	text-transform: uppercase;
+}
+.text_2{
+	font-size: 36px;
+	font-family: 'Jost',sans-serif;
+	margin: 0 0 32px;
+}
+.paragraph { 
+	color: #767676;
+	font-size: 18px;
+	margin: 0 0 24px;
+}
+/* end => section story */
+
+/* start => section fashion */
+.fashion{
+	font-family: 'Jost',sans-serif;
+	background-color: #f5f5f5;
+	padding: 96px 0 140px;
+}
+.text_main{
+	margin: 0 0 64px;
+	display: flex;
+	justify-content: center;
+}
+.text_h2{
+	font-size: 2.25rem;
+	font-weight: 600;
+    line-height: 1.2;
+}
+.main_fashion{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	gap: 5px;
+	margin: 0px 16px 48px;
+}
+.text_right,.right-text{
+	margin: 0 0 24px;
+	padding: 0 16px;
+	font-size: 28px;
+    font-family: 'Jost',sans-serif;
+    margin: 0 16px;
+}
+.paragraph_left{
+	color: #525252;
+	font-size: 18px;
+}
+.text_left,.right-text{ 
+	width: 100%;
+}
+.left_text1{ 
+	font-size: 28px;
+	font-family: 'Jost',sans-serif;
+	margin: 0 16px;
+}
+.main_button{
+	display: flex;
+	padding: 30px 0;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button_shop{
+	font-size: 16px;
+	width: 160px;
+	height: 54px;
+	border: 1px solid #000000 ;
+	white-space: nowrap;
+	background-color: #1f1f1f;
+    border-color: #1f1f1f;
+    color: #fff;
+	cursor: pointer;
+	padding: 14px 28px;
+	font-family:'Jost',sans-serif;
+}
+
+/* end => section fashion */
+
+/* start => section our story */
+
+.our_story{ 
+	padding: 96px 0px;
+	font-family: 'Jost',sans-serif;
+}
+.second_story{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	
+}
+.story_text{
+	padding: 40px ;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 47%;
+}
+.story_h6{
+	color: #909090;
+	margin: 0 0 12px;
+	font-size: 12px;
+
+	text-transform: uppercase;
+}
+.story_h2{ 
+	margin: 0 0 32px;
+	font-size:36px;
+}
+.paragraph_story{
+	font-size:18px;
+	color: #909090;
+	margin: 0 0 24px;
+}
+.paragraph_story1{
+	font-size:18px;
+	color: #909090;
+}
+
+.story_pic{ 
+	position: relative;
+	width: 269px;
+}
+
+/* end => section our story */
+
+
+/* start => section banner */
+.banner{
+	font-family:'Jost',sans-serif;
+	padding: 170px 0px;
+}
+.main_banner{
+	display: flex;
+	background-repeat: no-repeat;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.text_banner{
+	background-color: #ff6f61;
+	width: 60%;
+	align-items: center;
+	padding: 96px 96px;
+	font-size: 24px;	
+	color: white;
+}
+
+/* end => section banner */
+
+/* start => section banner */
+
+.main_picture{
+	display: flex;
+	justify-content: center;
+}
+.one_pic{
+	padding: 0 16px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.second_pic{
+	padding: 0 16px ;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* end => section customers */
+
+/* start => section customers */
+
+.customers{
+	padding: 96px 0px;
+	font-family: 'Jost',sans-serif;
+}
+.main_customers{
+	text-align: center;
+}
+.custom_h6{
+	margin: 0 0 12px ;
+	font-size: 13px;
+	color: #909090;
+	text-transform: uppercase;
+}
+.custom_h2{
+	margin: 0 0 64px;
+	font-size: 36px;
+	color: #1f1f1f;
+}
+.custom_parahraph{
+	font-style: italic;
+	font-size: 24px;
+	margin:0 0 24px;
+}
+.custom_parahraph_footer{
+	font-size: 15px;
+	color: #767676;
+}
+
+/* end => section customers */
+
+/* start => section foot pic */
+.foot_pic{
+	padding: 30px 0;
+	
+}
+.foot_main{
+	display: flex;
+	justify-content: center;
+}
+.picture_foot{
+	background-image: url('/verstka/verstka/about_us/foot_pic/1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1140px;
+	height: 310px;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+	
+}
+.button_foot{
+	text-align: center;
+}
+.foot_button{
+	cursor: pointer;
+	border: 1px solid white;
+	background-color: #fff;
+	padding: 14px 40px;
+}
+.foot_a{
+	font-size:16px;
+	font-family: 'Jost',sans-serif;
+	font-weight: 600;
+}
+
+/* end => section foot pic */
+
+/* start => section info container  */
+
+.info_container{
+    padding: 48px 0px;
+}
+.main_info{
+    font-family: 'Jost',sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: auto;
+}
+.info_h6{ 
+    font-size: .8125rem;
+    text-align: left;
+}
+.parahraph_info { 
+    color: #767676;
+}
+.info{
+   text-align: center;
+   display: flex;
+}
+.text_info{
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+}
+.color_car{ 
+    color:#ff6f61;
+    padding: 0 20px;
+}
+/* end => section info container */
+
